@@ -25,9 +25,8 @@ app.get('/category/:id', (req, res) =>{
         const category_cources = cources.find(n => n.category_id === id);
         res.send(category_cources);
     }
-
-    
 })
+
 
 app.get('/cources/:id', (req, res) => {
     const id = req.params.id;
